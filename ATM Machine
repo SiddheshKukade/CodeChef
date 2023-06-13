@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int n;
+	cin>>n;
+	string str="";
+	for(int i=0; i<n; i++){
+	    int x ,k;
+	    cin>>x>>k;
+	    for(int i=0; i<x;i++){
+	        int a;
+	        cin>>a;
+	       // if(k-a == 0 || k<=0 ){
+	       //     str.push_back('0');
+	       // }else{
+	       //     k = k-a;
+	       //     cout<<"k is"<<k;
+	       //     if(k <= 0 ){
+	       //         str.push_back('0');
+	       //     }else{
+	       //     str.push_back('1');
+	                
+	       //     }
+	       // }
+	       //while(k >0){
+	           k = k-a;
+	           if(k <0){
+	                 str.push_back('0');
+	                 k = k +a;
+	           }else{
+	                 str.push_back('1');
+	           }
+	       //}
+	    }
+	    
+	    cout<<str<<endl;
+	    str ="";
+	    
+	}
+	return 0;
+}
